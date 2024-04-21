@@ -14,7 +14,7 @@
         <link rel="stylesheet" href="css/patients2.css">
         <script type="text/javascript" src="js/materialize.min.js"></script>
     </head>
-<body>
+<body> 
     <?php
         if (isset($_POST['enregistrer'])) {
             $nom = $_POST['nom'];

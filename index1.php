@@ -46,7 +46,6 @@
         <div class="card teal darken-1 z-depth-2">
             <div class="en-tete-card">
                 <!-- <img src="" alt="" width="20px" > -->
-                
             </div>
             <div class="card-corps">
                 <div class="card-corps-left">

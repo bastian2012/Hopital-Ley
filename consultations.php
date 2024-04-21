@@ -7,8 +7,6 @@
 
     $select_id_patient = $bdd->prepare("SELECT Idpatient FROM patient");
     $select_id_patient->execute();
-    
-    
 ?>
 <!DOCTYPE html>
 <html lang="en">
