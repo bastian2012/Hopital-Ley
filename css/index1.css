@@ -1,0 +1,159 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: rgb(246, 246, 254);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+
+.corps{
+    width: 97%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90%;
+    flex-direction: column;
+}
+
+.points1{
+    width: 60px;
+    height: 100px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-bottom: -50px;
+    z-index: 1;
+}
+
+.points2{
+    width: 60px;
+    height: 100px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    z-index: 1;
+    position: absolute;
+    bottom: 5px;
+    right: 150px;
+}
+
+.point-item{
+    height: 7px;
+    width: 7px;
+    border-radius: 50%;
+    background: turquoise;
+    margin-bottom: 10px;
+}
+
+.row{
+    width: 100%;
+    height: 100%;
+}
+
+.card{
+    height: 95%;
+    width: 93%;
+}
+
+.en-tete-card{
+    width: 100%;
+    height: 66px;
+    background: white;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.en-tete-card img{
+    width: 180px;
+}
+
+.card-corps{
+    display: grid;
+    grid-template-columns: 1fr 4fr 6fr;
+}
+
+.card-corps-left{
+    background: white;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 98.8%;
+}
+
+.card-corps-left-item1{
+    margin-top: 30px;
+    width: 40px;
+    height: 40px;
+    background: teal;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-corps-left-item1 i{
+    font-size: 18px;
+    color: white;
+}
+
+.card-corps-center{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.desc{
+    width: 60%;
+}
+
+.desc h4{
+    font-weight: bold;
+    color: white;
+}
+
+.connect{
+    margin-top: 50px;
+}
+
+
+.card-corps-right{
+    height: 100%;
+}
+
+.card-corps-right img{
+    width: 100%;
+    height: 98.8%;
+    object-fit: cover;
+}
+
+.modal-content{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.modal-content img{
+    width: 200px;
+    object-fit: cover;
+}
+
+.form{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.powered{
+    margin-top: 10px;
+    width: 100%;
+    text-align: center;
+}
+
+.powered p{
+    color: white;
+}

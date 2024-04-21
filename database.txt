@@ -1,0 +1,9 @@
+CREATE TABLE `hospital`.`patient` ( `Idpatient` INT NOT NULL AUTO_INCREMENT ,  `nom` VARCHAR(50) NOT NULL ,  `prenom` VARCHAR(50) NOT NULL ,  `sexe` VARCHAR(8) NOT NULL ,  `tel` VARCHAR(20) NOT NULL ,  `adresse` VARCHAR(100) NOT NULL ,    PRIMARY KEY  (`Idpatient`)) ENGINE = MyISAM;
+
+CREATE TABLE `hospital`.`medecin` ( `Idmedecin` INT NOT NULL AUTO_INCREMENT ,  `nom` VARCHAR(50) NOT NULL ,  `prenom` VARCHAR(50) NOT NULL ,  `sexe` VARCHAR(8) NOT NULL ,  `tel` VARCHAR(20) NOT NULL ,  `adresse` VARCHAR(100) NOT NULL ,  `email` VARCHAR(50) NOT NULL ,  `specialite` VARCHAR(50) NOT NULL ,    PRIMARY KEY  (`Idmedecin`)) ENGINE = MyISAM;
+
+CREATE TABLE `hospital`.`prescription` ( `Idprescription` INT NOT NULL AUTO_INCREMENT ,  `Idconsultation` INT(11) NOT NULL ,  `prescription` TEXT NOT NULL ,    PRIMARY KEY  (`Idprescription`)) ENGINE = MyISAM;
+
+CREATE TABLE `hospital`.`consultation` ( `Idconsultation` INT NOT NULL AUTO_INCREMENT ,  `Idmedecin` INT(11) NOT NULL ,  `Idpatient` INT(11) NOT NULL ,  `poids` DOUBLE NOT NULL ,  `hauteur` INT(11) NOT NULL ,  `diagnostique` TEXT NOT NULL ,  `date_consultation` DATE NOT NULL ,    PRIMARY KEY  (`Idconsultation`)) ENGINE = MyISAM;
+
+CREATE TABLE `hospital`.`dossier` ( `Iddossier` INT NOT NULL AUTO_INCREMENT ,  `code` VARCHAR(50) NOT NULL ,  `Idconsultation` INT(11) NOT NULL ,  `date_enregistrement` DATE NOT NULL ,    PRIMARY KEY  (`Iddossier`)) ENGINE = MyISAM;

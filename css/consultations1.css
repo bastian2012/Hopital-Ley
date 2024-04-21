@@ -1,0 +1,193 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: rgb(246, 246, 254);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+
+::-webkit-scrollbar{
+    width: 5px;
+    height: 10px;
+    cursor: pointer;
+}
+
+::-webkit-scrollbar-thumb{
+    background: teal;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.corps{
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 91%;
+    flex-direction: column;
+}
+
+.card{
+    width: 100%;
+    height: 100%;
+}
+
+.en-tete-card{
+    width: 100%;
+    height: 56px;
+    background: teal;
+    padding-left: 10%;
+    padding-right: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.en-tete-card h5{
+    color: white;
+    font-weight: bold;
+}
+
+.card-corps{
+    width: 100%;
+    height: 87%;
+    display: grid;
+    grid-template-columns: 2fr 6fr;
+}
+
+.card-corps .liste-doctor{
+    width: 100%;
+}
+
+.card-corps-img{
+    display: grid;
+    grid-template-rows: 2fr 6fr;
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+}
+.card-corps img{
+    width: 90%;
+    object-fit: cover;
+    z-index: 0;
+}
+
+.menu{
+    width: 100%;
+    height: 200px;
+}
+
+
+.menu-en-tete{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.rond{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 6px solid teal;
+    margin-bottom: -30px;
+}
+
+.carre{
+    width: 30%;
+    height: 30px;
+    background: teal;
+    border-radius: 5px;
+    margin-bottom: -20px;
+}
+
+.menu-en-corps{
+    width: 90%;
+    height: 220px;
+    border: 10px solid rgba(165, 42, 42, 0.621);
+    border-radius: 10px;
+    background: white;
+    margin-left: 5%;
+    padding: 10px;
+}
+
+.liste-doctor{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-y: auto;
+}
+
+table{
+    width: 90%;
+    margin-top: 20px;
+    /* border-bottom: 1px solid teal;
+    border-left: 1px solid teal;
+    border-right: 1px solid teal; */
+    border-collapse: collapse;
+    border-top-left-radius: 5px 5px 0 0;
+    /* box-shadow: 0 0 20px rgb(0, 0, 0, 0.15); */
+}
+
+thead{
+    background: teal;
+}
+
+thead th{
+    color: white;
+    font-size: 14px;
+}
+
+table tbody td{
+    font-size: 13px;
+}
+
+tbody{
+    overflow-y: auto;
+}
+
+table th, td{
+    padding: 12px 15px;
+}
+
+table tr{
+    border-bottom: 1px solid #dddddd;
+}
+
+table tr:nth-last-of-type(even){
+    background: rgb(246, 246, 254);
+}
+
+table tr:last-of-type{
+    border-bottom: 2px solid teal;
+}
+
+.modal-content{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.modal-content img{
+    width: 200px;
+    object-fit: cover;
+}
+
+.form{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.form-en-tete{
+    width: 220px;
+    display: flex;
+    position: absolute;
+    right: 30px;
+    align-items: center;
+}
